@@ -8,7 +8,7 @@ def load_posts():
     try:
         with open('blog_posts.json', 'r') as file:
             return json.load(file)
-    except FileNotFoundError:
+        except FileNotFoundError:
         return []
 
 
@@ -39,6 +39,14 @@ def add():
         return redirect(url_for('index'))
 
     return render_template('add.html')
+
+
+@app.route('/delete/<int:post_id>', methods=['POST'])
+def delete(post_id):
+    blog_posts = load_posts()
+    blog_posts = [post for post in blog_posts if post['id'] != post_id]
+    save_posts(blog_posts)
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
