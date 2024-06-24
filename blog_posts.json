@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "author": "John Doe",
+        "title": "First Post",
+        "content": "This is my first post. Welcome to my blog!"
+    },
+    {
+        "id": 2,
+        "author": "Jane Doe",
+        "title": "Second Post",
+        "content": "This is another post. I'm excited to share more content with you."
+    },
+    {
+        "id": 3,
+        "author": "Alice Smith",
+        "title": "Hello World",
+        "content": "Hello, world! This is my first blog post here."
+    },
+    {
+        "id": 4,
+        "author": "Bob Johnson",
+        "title": "Tech Trends",
+        "content": "Let's discuss the latest trends in technology and innovation."
+    },
+    {
+        "id": 5,
+        "author": "Carol Williams",
+        "title": "Travel Adventures",
+        "content": "Sharing my travel adventures and experiences from around the world."
+    }
+]
