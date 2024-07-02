@@ -8,7 +8,7 @@ def load_posts():
     try:
         with open('blog_posts.json', 'r') as file:
             return json.load(file)
-        except FileNotFoundError:
+    except FileNotFoundError:
         return []
 
 
@@ -50,4 +50,4 @@ def delete(post_id):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
